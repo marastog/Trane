@@ -30,6 +30,7 @@
 
     .tile-body {
         padding: 0.625em 0 1.875em;
+        padding-left: 0;
 
         .color-swatches {
             min-height: 2.25em;
@@ -79,6 +80,7 @@
             a {
                 font-size: 1em;
                 text-decoration: none;
+                color: $theme-color;
 
                 @include media-breakpoint-down(md) {
                     font-size: 0.9375em;
@@ -86,6 +88,50 @@
 
                 @include media-breakpoint-down(sm) {
                     font-size: 0.8125em;
+                }
+            }
+        }
+
+        .standard-features {
+            ul {
+                padding-inline-start: 0;
+
+                li {
+                    font-family: $font-family-base;
+                    font-size: 0.78rem;
+                    line-height: 1.2;
+                    color: $grey-14;
+                    margin-bottom: 0.5rem;
+                    list-style: none;
+                }
+
+                .standard-features-head {
+                    color: $grey-13;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .enhanced-features {
+            ul {
+                padding-inline-start: 0;
+
+                li {
+                    font-family: $font-family-base;
+                    font-size: 0.72rem;
+                    line-height: 1.2;
+                    color: $grey-14;
+                    margin-bottom: 0.5rem;
+                    list-style: none;
+
+                    i {
+                        color: $theme-color;
+                    }
+                }
+
+                .enhanced-features-head {
+                    color: $grey-13;
+                    font-size: 0.8rem;
                 }
             }
         }
