@@ -2,16 +2,16 @@
     <div class="container">
         <div class="footer-container row">
             <div class="footer-item col-sm-3 store">
-                <iscontentasset aid="footer-locate-store" />
+                <iscontentasset aid="footer-menu-one" />
             </div>
             <div class="footer-item col-sm-3 collapsible-xs">
-                <iscontentasset aid="footer-account" />
+                <iscontentasset aid="footer-menu-two" />
             </div>
             <div class="footer-item col-sm-3 collapsible-xs">
-                <iscontentasset aid="footer-support" />
+                <iscontentasset aid="footer-menu-three" />
             </div>
             <div class="footer-item col-sm-3 collapsible-xs">
-                <iscontentasset aid="footer-about" />
+                <iscontentasset aid="footer-menu-four" />
             </div>
         </div>
         <hr class="hidden-xs-down" />
