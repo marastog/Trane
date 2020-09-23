@@ -4,14 +4,14 @@
 @import "account";
 
 .profile-back-to-account-link {
-    color: $primary;
+    color: $theme-color;
     text-decoration: underline;
     display: block;
     text-align: center;
 }
 
 .tracking-consent {
-    color: $blue;
+    color: $theme-color;
     text-decoration: underline;
     cursor: pointer;
 }

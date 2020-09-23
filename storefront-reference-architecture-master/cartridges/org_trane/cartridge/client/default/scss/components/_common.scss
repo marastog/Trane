@@ -13,8 +13,26 @@ input[placeholder] {
     text-overflow: ellipsis;
 }
 
+.btn-primary {
+    background-color: $theme-color;
+}
+
+.btn-primary:hover {
+    background-color: $theme-color-hover;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 header ~ #maincontent .container a:not(.btn-primary, .btn-outline-primary) {
-    color: $blue;
+    color: $theme-color;
 }
 
 .hide-order-discount {
