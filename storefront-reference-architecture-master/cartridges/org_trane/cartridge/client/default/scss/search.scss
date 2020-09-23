@@ -86,8 +86,12 @@
 
             button {
                 border: none;
-                color: $blue;
+                color: $black;
                 background-color: transparent;
+
+                i {
+                    color: $theme-color;
+                }
             }
         }
     }

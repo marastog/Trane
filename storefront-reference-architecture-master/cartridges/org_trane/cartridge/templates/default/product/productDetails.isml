@@ -53,6 +53,24 @@
                         </div>
                     </div>
 
+                  <!-- Product description-->
+                <div class="row description">
+                <h6>This is the short description of the product</h6>
+                <ul>
+                <li>Care Instructions: Machine Wash</li>
+                <li>Fit Type: Classic Fit</li>
+                <li>Style Code: 55403</li>
+                <li>50% Modal, 50% Cotton</li>
+                <li>Made of super combed cotton and modal, this long tee ensures just the comfort and coverage you need.</li>
+                <li>Super soft, Stretchable</li>
+                <li>Ultra Soft Handle: for complete comfort</li>
+                <li>Superior Drape: for ease of movement</li>
+                <li>Machine wash cold (Gentle Cycle) Do Not Bleach Tumble Dry Low Do Not Iron Do Not Wring Do Not Dry
+                    Clean ______________ Wash inside out Wash like colours together Do Not Iron on Label/Embroidery</li>
+                </ul>
+                </div>
+                <hr />
+
                     <div class="attributes">
                         <!-- Attributes and Quantity -->
                         <isinclude template="product/components/mainAttributes" />
@@ -125,9 +143,7 @@
                         </div>
 
                         <!-- Social Sharing Icons -->
-                        <div class="row">
-                            <isinclude template="product/components/socialIcons" />
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -137,7 +153,7 @@
             </div>
 
             <isset name="loopState" value="{count: 1}" scope="page" />
-            <isinclude template="product/components/descriptionAndDetails" />
+            
 
             <div class="recommendations">
                 <isslot id="product-recommendations-m" description="Recommended products" context="global" context-object="${pdict.product.raw}" />

@@ -10,6 +10,36 @@
     @include swatch(2.5em, $white);
 }
 
+.product-name {
+    color: $theme-color;
+}
+
+.product-id {
+    color: $grey-12;
+}
+
+.description {
+    h6 {
+        font-family: $font-family-base;
+        line-height: 1.2;
+        color: $grey-12;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 1.45rem;
+    }
+
+    ul {
+        li {
+            font-family: $font-family-base;
+            font-size: 0.78rem;
+            line-height: 1.2;
+            color: $grey-14;
+            margin-bottom: 0.5rem;
+            list-style: disc;
+        }
+    }
+}
+
 .product-detail [disabled] .swatch-circle,
 .product-detail .swatch-circle.unselectable {
     cursor: not-allowed;
@@ -33,7 +63,7 @@ label.color ~ a:hover {
         .title {
             font-size: 1.5rem;
             margin-bottom: 0;
-            font-family: 'Dosis', sans-serif;
+            font-family: "Dosis", sans-serif;
         }
 
         > div:last-child {
@@ -65,7 +95,6 @@ label.color ~ a:hover {
         font-size: 1.875em;
         list-style-type: none;
         padding: 0;
-        color: $grey6;
 
         @include media-breakpoint-down(md) {
             font-size: 1.5625em;
@@ -73,7 +102,7 @@ label.color ~ a:hover {
 
         i,
         a {
-            color: $grey6;
+            color: $theme-color;
             padding-right: 0.2em;
         }
     }
