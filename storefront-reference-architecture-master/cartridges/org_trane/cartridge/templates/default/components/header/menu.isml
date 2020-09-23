@@ -1,4 +1,10 @@
-<nav class="navbar navbar-expand-md bg-inverse col-12">
+<nav class="navbar navbar-expand-md bg-inverse col-12 navmain">
+    <div class="header-logo">
+        <a
+            href="https://zzrj-005.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RG-Site/default/Home-Show"><img
+                src="https://runtruhvac.com/wp-content/themes/runtru/images/runtru-logo.svg" width="150"
+                alt="RunTru Heating and Air Conditioning logo"></a>
+    </div>
     <div class="close-menu clearfix d-lg-none">
         <div class="back pull-left">
             <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">

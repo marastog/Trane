@@ -95,8 +95,52 @@ $slide-out-animation: left 0.5s cubic-bezier(0, 1, 0.5, 1);
         }
     }
 
-    .menu-group {
-        flex: 0 0 100%;
+    .navmain {
+        .menu-group {
+            flex: 0 0 85.8%;
+            padding-top: 3rem;
+
+            ul {
+                float: right;
+
+                li {
+                    .dropdown-menu {
+                        .dropdown-item {
+                            border: none;
+                            background-color: white;
+
+                            .dropdown-link {
+                                font-weight: normal;
+                            }
+
+                            .dropdown-link:hover {
+                                color: black;
+                                font-weight: bold;
+                                background-color: white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-family: "GTAmericaCondensedBold", sans-serif;
+                        color: $grey-15;
+                        font-size: 0.85rem;
+                        cursor: pointer;
+                        font-weight: bold;
+                        transition: color 0.25s ease;
+                    }
+
+                    a:hover {
+                        color: $orange-red;
+                    }
+                }
+            }
+        }
+
+        .header-logo {
+            padding-top: 3rem;
+        }
     }
 
     li > .close-menu {
