@@ -34,7 +34,7 @@
     &.color-value.selected::after {
         background: $white;
         border-radius: 50%;
-        color: $black;
+        color: $theme-color;
         content: '\f058';
         display: table-caption;
         font-family: 'FontAwesome';
