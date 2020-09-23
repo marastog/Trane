@@ -5,3 +5,23 @@
         </isobject>
     </div>
 </isloop>
+<hr />
+
+<div class="standard-features">
+   <ul>
+        <b><li class="standard-features-head">Standard Features</li> </b>
+        <li>Best Quality</li>
+        <li>Perfect Fiting</li>
+        <li>Standard Look</li>
+    </ul>
+</div>
+<hr />
+<div class="enhanced-features">
+    <ul>
+        <table>
+        <tr><th><li class="enhanced-features-head">Enhanced Features</li></th></tr>
+        <tr><td><li><i class="fa fa-check-circle" aria-hidden="true"></i> &nbsp Light Weight</li></td><td><li><i class="fa fa-check-circle" aria-hidden="true"></i> &nbsp Cheap price</li></td></tr>
+        <tr><td><li><i class="fa fa-check-circle" aria-hidden="true"></i> &nbsp Discount</li></td><td><li><i class="fa fa-check-circle" aria-hidden="true"></i> &nbsp Assurance</li></td></tr>
+        </table>
+    </ul>
+</div>
