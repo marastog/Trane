@@ -47,7 +47,7 @@
     </field>
 
     <field formid="securityCode" label="profile.securitycode" type="string" mandatory="true" binding="securityCode"
-        min-length="3"  max-length="4" missing-error="error.card.info.missing.securityCode" regexp="^[0-9]{4}$" />
+        min-length="3"  max-length="4" missing-error="error.card.info.missing.securityCode" regexp="^[0-9]$" />
 
     <field formid="saveCard" label="label.save.card" binding="saveCard" type="boolean" mandatory="false" checked="true" />
 
