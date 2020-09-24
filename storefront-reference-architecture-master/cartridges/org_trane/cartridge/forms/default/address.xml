@@ -35,7 +35,7 @@
 
     <!-- phone is mandatory for addresses -->
     <field formid="phone" label="label.input.phonenumber" description="address.phone.example" type="string" mandatory="true"
-           binding="phone"
+           binding="phone" min-length="10" max-length="20"
            missing-error="address.phone.missing"
            range-error="error.message.between10and20"
            parse-error="error.message.parse.phone"
