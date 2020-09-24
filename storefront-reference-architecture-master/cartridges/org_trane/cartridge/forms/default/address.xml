@@ -35,10 +35,11 @@
 
     <!-- phone is mandatory for addresses -->
     <field formid="phone" label="label.input.phonenumber" description="address.phone.example" type="string" mandatory="true"
-           binding="phone" min-length="10" max-length="20"
+           binding="phone"
            missing-error="address.phone.missing"
            range-error="error.message.between10and20"
-           parse-error="error.message.parse.phone"/>
+           parse-error="error.message.parse.phone"
+           regexp="^[0-9]{10}$" />
 
     <!-- actions provided by the edit shipping address dialog -->
     <action formid="apply" valid-form="true"/>

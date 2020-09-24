@@ -9,6 +9,7 @@
             <isprint value="${pdict.profileForm.customer.firstname.label}" encoding="htmlcontent" />
         </label>
         <input
+            pattern="[A-Za-z]+"
             type="text"
             class="form-control"
             id="registration-form-fname"
@@ -25,6 +26,7 @@
             <isprint value="${pdict.profileForm.customer.lastname.label}" encoding="htmlcontent" />
         </label>
         <input
+            pattern="[A-Za-z]+"
             type="text"
             class="form-control"
             id="registration-form-lname"
