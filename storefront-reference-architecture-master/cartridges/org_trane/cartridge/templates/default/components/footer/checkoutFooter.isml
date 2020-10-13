@@ -1,11 +1,5 @@
 <footer class="checkout-footercontent">
     <div class="container">
-            <ul class="checkout-footer-container text-center">
-                <li class="checkout-footer-item"><a>Contact a Dealer</a></li>
-                <li class="checkout-footer-item"><span>|</span></li>
-                <li class="checkout-footer-item"><a>Customer Service</a></li>
-                <li class="checkout-footer-item"><span>|</span></li>
-                <li class="checkout-footer-item"><a>Privacy Policy </a></li>
-            </ul>
+         <iscontentasset aid="checkoutFooter" />
     </div>
 </footer>
