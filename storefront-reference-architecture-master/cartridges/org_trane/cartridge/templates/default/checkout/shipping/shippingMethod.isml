@@ -1,3 +1,15 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<hr />
+<isscript>
+        var assets = require('~/cartridge/scripts/assets.js');
+        assets.addCss('/css/default.css');
+        assets.addCss('/css/default.date.css');
+        assets.addCss('/css/default.time.css');
+        assets.addJs('/js/legacy.js');
+        assets.addJs('/js/picker.js');
+        assets.addJs('/js/picker.date.js');
+        assets.addJs('/js/picker.time.js');
+</isscript>
 <isset name="shippingAddress" value="${pdict.forms.shippingForm.shippingAddress}" scope="page"/>
 <div class="row leading-lines shipping-method-list" data-select-shipping-method-url="${URLUtils.https('CheckoutShippingServices-SelectShippingMethod')}" data-action-url="${URLUtils.https('CheckoutShippingServices-UpdateShippingMethodsList')}">
 	<input name="shipmentUUID" type="hidden" value="${shippingModel.UUID}" />
@@ -30,5 +42,81 @@
     </div>
     <div class="col-3 text-right shipping-method-pricing end-lines">
         <span class="shipping-cost"></span>
+    </div>
+</div>
+<iscomment>
+    <iscontentasset aid="Professional-Installation" />
+</iscomment>
+
+<div>
+    <div class="form-check col-9 start-lines">
+        <input type="radio" class="form-check-input" id="shippingMethodRadioButton" checked>
+        <label class="form-check-label shipping-method-option" for="shippingMethodRadioButton">
+            <span class="display-name">Professional Installation</span>
+        </label>
+    </div>
+    <div>
+        <span class="shipping-subtitle" style="display:block;">Installation included in the system price</span>
+    </div>
+    <br />
+    <br />
+    <h3>Dealer Appointment
+        <span class="shipping-subtitle-optional">( Optional )</span>
+    </h3>
+    <hr />
+    <div class="form-check col-9 start-lines">
+        <input type="radio" class="form-check-input" id="shippingMethodAppointmentRadioButton" name="appointment">
+        <label class="form-check-label shipping-method-option" for="shippingMethodAppointmentRadioButton">
+            <span class="display-name">Schedule Appointment Now</span>
+        </label>
+    </div>
+    <div>
+        <span class="shipping-subtitle" style="display:block;">Select 3 times and date that you are available for the
+            dealer to visit your home for an installation consultation. After purchase a dealer will contact you within
+            2 bussiness days.</span>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Appointment Option 1</label>
+
+                <input class="Schedule-Appointment-Now-input" type="text" placeholder="Select Date" />
+            </div>
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Timeframe</label><br />
+                <input class="Schedule-Appointment-Now-input" placeholder="Select Time" type="text" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Appointment Option 2</label>
+
+                <input class="Schedule-Appointment-Now-input" type="text" placeholder="Select Date" />
+            </div>
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Timeframe</label><br />
+                <input class="Schedule-Appointment-Now-input" placeholder="Select Time" type="text" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Appointment Option 3</label>
+
+                <input class="Schedule-Appointment-Now-input" type="text" placeholder="Select Date" />
+            </div>
+            <div class="col-md-6 Schedule-Appointment-Now-options">
+                <label class="display-name ">Timeframe</label><br />
+                <input class="Schedule-Appointment-Now-input" placeholder="Select Time" type="text" />
+            </div>
+        </div>
+    </div></br>
+    <div class="form-check col-9 start-lines">
+        <input type="radio" class="form-check-input" id="shippingMethodAppointmentlaterRadioButton" name="appointment">
+        <label class="form-check-label shipping-method-option" for="shippingMethodAppointmentlaterRadioButton">
+            <span class="display-name">Schedule Appointment Later</span>
+        </label>
     </div>
 </div>

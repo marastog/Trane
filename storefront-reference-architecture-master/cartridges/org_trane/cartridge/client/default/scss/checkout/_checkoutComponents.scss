@@ -76,7 +76,7 @@ $stored-payment-spacing: 1rem;
 }
 
 .hero-confirmation {
-    background-image: url('../../images/thankyou.jpg');
+    background-image: url("../../images/thankyou.jpg");
     background-position-y: -8.125em;
 }
 
@@ -223,4 +223,39 @@ $stored-payment-spacing: 1rem;
 .view-address-block h3,
 .shipping-method-block h3 {
     font-size: 1.25rem;
+}
+
+.shipping-method-option {
+    i {
+        margin-left: 0.5em;
+        font-size: 12.85px;
+    }
+}
+
+.shipping-subtitle {
+    font-size: 11.85px;
+    color: $grey5;
+    padding-left: 2.15em;
+}
+
+.display-name {
+    font-size: 12.85px;
+    color: $grey6;
+    font-weight: 500;
+}
+
+.shipping-subtitle-optional,
+.Schedule-Appointment-Now-input::placeholder {
+    font-size: 11.85px;
+    color: $grey5;
+    padding-left: 0.5em;
+}
+
+.Schedule-Appointment-Now-options {
+    padding: 0.68em;
+    padding-left: 1.47em;
+}
+
+.Schedule-Appointment-Now-input {
+    width: 100%;
 }
